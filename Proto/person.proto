@@ -1,6 +1,14 @@
 syntax = "proto3";
 package tutorial;
 
+// [START csharp_declaration]
+option csharp_namespace = "Google.Protobuf.Examples.AddressBook";
+// [END csharp_declaration]
+
+// [START go_declaration]
+option go_package = "./tutorial";
+// [END go_declaration]
+
 message Person {
   string name = 1;
   int32 id = 2;  // Unique ID number for this person.

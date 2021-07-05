@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Tutorial {
+namespace Google.Protobuf.Examples.AddressBook {
 
   /// <summary>Holder for reflection information generated from Proto/person.proto</summary>
   public static partial class PersonReflection {
@@ -30,12 +30,13 @@ namespace Tutorial {
             "bmVOdW1iZXISDgoGbnVtYmVyGAEgASgJEigKBHR5cGUYAiABKA4yGi50dXRv",
             "cmlhbC5QZXJzb24uUGhvbmVUeXBlIisKCVBob25lVHlwZRIKCgZNT0JJTEUQ",
             "ABIICgRIT01FEAESCAoEV09SSxACIi8KC0FkZHJlc3NCb29rEiAKBnBlb3Bs",
-            "ZRgBIAMoCzIQLnR1dG9yaWFsLlBlcnNvbmIGcHJvdG8z"));
+            "ZRgBIAMoCzIQLnR1dG9yaWFsLlBlcnNvbkIzWgouL3R1dG9yaWFsqgIkR29v",
+            "Z2xlLlByb3RvYnVmLkV4YW1wbGVzLkFkZHJlc3NCb29rYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tutorial.Person), global::Tutorial.Person.Parser, new[]{ "Name", "Id", "Email", "Phones" }, null, new[]{ typeof(global::Tutorial.Person.Types.PhoneType) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Tutorial.Person.Types.PhoneNumber), global::Tutorial.Person.Types.PhoneNumber.Parser, new[]{ "Number", "Type" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Tutorial.AddressBook), global::Tutorial.AddressBook.Parser, new[]{ "People" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Protobuf.Examples.AddressBook.Person), global::Google.Protobuf.Examples.AddressBook.Person.Parser, new[]{ "Name", "Id", "Email", "Phones" }, null, new[]{ typeof(global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneType) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneNumber), global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneNumber.Parser, new[]{ "Number", "Type" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Protobuf.Examples.AddressBook.AddressBook), global::Google.Protobuf.Examples.AddressBook.AddressBook.Parser, new[]{ "People" }, null, null, null, null)
           }));
     }
     #endregion
@@ -56,7 +57,7 @@ namespace Tutorial {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tutorial.PersonReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Google.Protobuf.Examples.AddressBook.PersonReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -130,12 +131,12 @@ namespace Tutorial {
 
     /// <summary>Field number for the "phones" field.</summary>
     public const int PhonesFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Tutorial.Person.Types.PhoneNumber> _repeated_phones_codec
-        = pb::FieldCodec.ForMessage(34, global::Tutorial.Person.Types.PhoneNumber.Parser);
-    private readonly pbc::RepeatedField<global::Tutorial.Person.Types.PhoneNumber> phones_ = new pbc::RepeatedField<global::Tutorial.Person.Types.PhoneNumber>();
+    private static readonly pb::FieldCodec<global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneNumber> _repeated_phones_codec
+        = pb::FieldCodec.ForMessage(34, global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneNumber.Parser);
+    private readonly pbc::RepeatedField<global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneNumber> phones_ = new pbc::RepeatedField<global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneNumber>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Tutorial.Person.Types.PhoneNumber> Phones {
+    public pbc::RepeatedField<global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneNumber> Phones {
       get { return phones_; }
     }
 
@@ -357,7 +358,7 @@ namespace Tutorial {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Tutorial.Person.Descriptor.NestedTypes[0]; }
+          get { return global::Google.Protobuf.Examples.AddressBook.Person.Descriptor.NestedTypes[0]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -402,10 +403,10 @@ namespace Tutorial {
 
         /// <summary>Field number for the "type" field.</summary>
         public const int TypeFieldNumber = 2;
-        private global::Tutorial.Person.Types.PhoneType type_ = global::Tutorial.Person.Types.PhoneType.Mobile;
+        private global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneType type_ = global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneType.Mobile;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public global::Tutorial.Person.Types.PhoneType Type {
+        public global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneType Type {
           get { return type_; }
           set {
             type_ = value;
@@ -437,7 +438,7 @@ namespace Tutorial {
         public override int GetHashCode() {
           int hash = 1;
           if (Number.Length != 0) hash ^= Number.GetHashCode();
-          if (Type != global::Tutorial.Person.Types.PhoneType.Mobile) hash ^= Type.GetHashCode();
+          if (Type != global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneType.Mobile) hash ^= Type.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -460,7 +461,7 @@ namespace Tutorial {
             output.WriteRawTag(10);
             output.WriteString(Number);
           }
-          if (Type != global::Tutorial.Person.Types.PhoneType.Mobile) {
+          if (Type != global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneType.Mobile) {
             output.WriteRawTag(16);
             output.WriteEnum((int) Type);
           }
@@ -478,7 +479,7 @@ namespace Tutorial {
             output.WriteRawTag(10);
             output.WriteString(Number);
           }
-          if (Type != global::Tutorial.Person.Types.PhoneType.Mobile) {
+          if (Type != global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneType.Mobile) {
             output.WriteRawTag(16);
             output.WriteEnum((int) Type);
           }
@@ -495,7 +496,7 @@ namespace Tutorial {
           if (Number.Length != 0) {
             size += 1 + pb::CodedOutputStream.ComputeStringSize(Number);
           }
-          if (Type != global::Tutorial.Person.Types.PhoneType.Mobile) {
+          if (Type != global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneType.Mobile) {
             size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
           }
           if (_unknownFields != null) {
@@ -513,7 +514,7 @@ namespace Tutorial {
           if (other.Number.Length != 0) {
             Number = other.Number;
           }
-          if (other.Type != global::Tutorial.Person.Types.PhoneType.Mobile) {
+          if (other.Type != global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneType.Mobile) {
             Type = other.Type;
           }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -536,7 +537,7 @@ namespace Tutorial {
                 break;
               }
               case 16: {
-                Type = (global::Tutorial.Person.Types.PhoneType) input.ReadEnum();
+                Type = (global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneType) input.ReadEnum();
                 break;
               }
             }
@@ -559,7 +560,7 @@ namespace Tutorial {
                 break;
               }
               case 16: {
-                Type = (global::Tutorial.Person.Types.PhoneType) input.ReadEnum();
+                Type = (global::Google.Protobuf.Examples.AddressBook.Person.Types.PhoneType) input.ReadEnum();
                 break;
               }
             }
@@ -591,7 +592,7 @@ namespace Tutorial {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Tutorial.PersonReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Google.Protobuf.Examples.AddressBook.PersonReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -623,12 +624,12 @@ namespace Tutorial {
 
     /// <summary>Field number for the "people" field.</summary>
     public const int PeopleFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Tutorial.Person> _repeated_people_codec
-        = pb::FieldCodec.ForMessage(10, global::Tutorial.Person.Parser);
-    private readonly pbc::RepeatedField<global::Tutorial.Person> people_ = new pbc::RepeatedField<global::Tutorial.Person>();
+    private static readonly pb::FieldCodec<global::Google.Protobuf.Examples.AddressBook.Person> _repeated_people_codec
+        = pb::FieldCodec.ForMessage(10, global::Google.Protobuf.Examples.AddressBook.Person.Parser);
+    private readonly pbc::RepeatedField<global::Google.Protobuf.Examples.AddressBook.Person> people_ = new pbc::RepeatedField<global::Google.Protobuf.Examples.AddressBook.Person>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Tutorial.Person> People {
+    public pbc::RepeatedField<global::Google.Protobuf.Examples.AddressBook.Person> People {
       get { return people_; }
     }
 
